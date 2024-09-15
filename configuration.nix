@@ -1,9 +1,19 @@
 { config, pkgs, ... }:
-
+let
+  nixvim = import (builtins.fetchGit {
+    url = "https://github.com/nix-community/nixvim";
+    ref = "nixos-24.05";
+  });
+  in
 {
   imports =
     [ 
       ./hardware-configuration.nix
+      nixvim.nixosModules.nixvim
+      ./packages.nix
+      ./nixvim.nix
+      ./git.nix
+      ./tor.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -53,35 +63,9 @@
     isNormalUser = true;
     description = "Sashank Durbha";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
   };
 
   nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    neovim
-    git
-    tor-browser
-    alacritty
-  ];
-  programs.neovim = {
-	defaultEditor = true;
-	viAlias = true;
-	vimAlias = true;
-	enable = true;
-  };
-  programs.git = {
-	enable = true;
-	config = [
-		{user.email = "sashankdurbha@gmail.com";}
-		{user.name = "Sashank Durbha";}
-	];
-  };
-  services.tor = {
-	enable = true;
-	openFirewall = true;
-  };
 
   system.stateVersion = "24.05"; # Did you read the comment?
 }
