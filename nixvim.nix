@@ -10,6 +10,11 @@
 	opts = {
 		number = true;
 		relativenumber = true;
+		incsearch = true;
+		ignorecase = true;
+		smartcase = true;
+		hlsearch = false;
+		cursorline = true;
 	};
 	plugins = {
 		which-key.enable = true;
@@ -25,7 +30,7 @@
 
 		{
 			mode = "n";
-        key = "<leader>f";
+        key = "<leader>ff";
         action = "<cmd>Telescope find_files<CR>";
 		}
 	];
