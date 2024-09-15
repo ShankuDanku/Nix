@@ -4,5 +4,7 @@
   neovim
   git
   tor-browser
+  opera
+  vimPlugins.nvim-web-devicons
   ];
 }

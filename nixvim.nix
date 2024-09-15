@@ -6,7 +6,12 @@
 	defaultEditor = true;
 	viAlias = true;
 	vimAlias = true;
-	colorschemes.gruvbox.enable = true;
+	colorschemes.onedark = {
+		enable = true;
+		settings = {
+			style = "warm";
+		};
+	};
 	opts = {
 		number = true;
 		relativenumber = true;
@@ -20,6 +25,8 @@
 		which-key.enable = true;
 		nvim-tree.enable = true;
 		telescope.enable = true;
+		lualine.enable = true;
+		toggleterm.enable = true;
 	};
 	keymaps = [
 		{
