@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  fonts,
   ...
 }: let
   nixvim = import (builtins.fetchGit {
@@ -15,6 +16,7 @@ in {
     ./nixvim.nix
     ./git.nix
     ./tor.nix
+    <home-manager/nixos>
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -66,6 +68,16 @@ in {
   };
 
   nixpkgs.config.allowUnfree = true;
+  fonts.packages = with pkgs; [
+	(nerdfonts.override { fonts = [ "UbuntuMono"]; })
+  ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
+  home-manager.users.sashank = {pkgs, ...}: {
+	programs.kitty = {
+		enable = true;
+		font.name = "family=\"Ubuntu Mono\"";
+	};
+	home.stateVersion = "24.05";
+  };
 }

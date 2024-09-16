@@ -46,19 +46,19 @@
       {
         mode = "n";
         key = "<leader>th";
-        action = ":ToggleTerm direction=horizontal ";
+        action = ":1ToggleTerm direction=horizontal<cr>";
         options.desc = "Horizontal Terminal";
       }
       {
         mode = "n";
         key = "<leader>tv";
-        action = ":ToggleTerm direction=vertical ";
+        action = ":2ToggleTerm direction=vertical size=80<cr>";
         options.desc = "Vertical Terminal";
       }
       {
         mode = "n";
         key = "<leader>tf";
-        action = ":ToggleTerm direction=float ";
+        action = ":3ToggleTerm direction=float<cr>";
         options.desc = "Floating Terminal";
       }
       {
