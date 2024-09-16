@@ -13,9 +13,7 @@ in {
     ./hardware-configuration.nix
     nixvim.nixosModules.nixvim
     ./packages.nix
-    ./nixvim.nix
-    ./git.nix
-    ./tor.nix
+    ./package_config/import.nix
     <home-manager/nixos>
   ];
 
