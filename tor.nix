@@ -1,8 +1,6 @@
-{...}:
-{
-
+{...}: {
   services.tor = {
-	enable = true;
-	openFirewall = true;
+    enable = true;
+    openFirewall = true;
   };
 }

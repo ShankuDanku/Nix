@@ -1,27 +1,28 @@
-{ config, pkgs, ... }:
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   nixvim = import (builtins.fetchGit {
     url = "https://github.com/nix-community/nixvim";
     ref = "nixos-24.05";
   });
-  in
-{
-  imports =
-    [ 
-      ./hardware-configuration.nix
-      nixvim.nixosModules.nixvim
-      ./packages.nix
-      ./nixvim.nix
-      ./git.nix
-      ./tor.nix
-    ];
+in {
+  imports = [
+    ./hardware-configuration.nix
+    nixvim.nixosModules.nixvim
+    ./packages.nix
+    ./nixvim.nix
+    ./git.nix
+    ./tor.nix
+  ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "sashank-nix"; 
+  networking.hostName = "sashank-nix";
 
   networking.networkmanager.enable = true;
 
@@ -61,7 +62,7 @@ let
   users.users.sashank = {
     isNormalUser = true;
     description = "Sashank Durbha";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
   };
 
   nixpkgs.config.allowUnfree = true;
