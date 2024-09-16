@@ -15,6 +15,7 @@ in {
     ./packages.nix
     ./package_config/import.nix
     <home-manager/nixos>
+    ./home.nix
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -71,11 +72,4 @@ in {
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
-  home-manager.users.sashank = {pkgs, ...}: {
-	programs.kitty = {
-		enable = true;
-		font.name = "family=\"Ubuntu Mono\"";
-	};
-	home.stateVersion = "24.05";
-  };
 }
