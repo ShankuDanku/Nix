@@ -6,5 +6,6 @@
   tor-browser
   opera
   vimPlugins.nvim-web-devicons
+  kitty
   ];
 }

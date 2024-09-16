@@ -27,9 +27,11 @@
 			enable = true;
 		};
 		nvim-tree.enable = true;
-		telescope.enable = true;
 		lualine.enable = true;
 		toggleterm.enable = true;
+		fzf-lua.enable = true;
+		gitgutter.enable = true;
+		gitblame.enable = true;
 	};
 	keymaps = [
 		{
@@ -38,29 +40,46 @@
         action = "<cmd>NvimTreeToggle<CR>";
 	options.desc = "Toggle Tree";
 		}
-
-		{
-			mode = "n";
-        key = "<leader>ff";
-        action = "<cmd>Telescope find_files<CR>";
-	options.desc = "Find Files";
-		}
 		{
 		mode = "t";
 		key = "<Esc>";
-		action = "<cmd>ToggleTerm<cr>";
+		action = "<C-Bslash><C-N>";
 		}
 		{
 			mode = "n";
         key = "<leader>th";
-        action = "<cmd>ToggleTerm direction=horizontal<CR>";
+        action = ":ToggleTerm direction=horizontal ";
 	options.desc = "Horizontal Terminal";
 	}
 		{
 			mode = "n";
+        key = "<leader>tv";
+        action = ":ToggleTerm direction=vertical ";
+	options.desc = "Vertical Terminal";
+	}
+		{
+			mode = "n";
         key = "<leader>tf";
-        action = "<cmd>ToggleTerm direction=float<CR>";
+        action = ":ToggleTerm direction=float ";
 	options.desc = "Floating Terminal";
+	}
+		{
+			mode = "n";
+        key = "<leader>tt";
+        action = "<cmd>ToggleTermToggleAll<cr>";
+	options.desc = "Toggle Terminals";
+	}
+		{
+			mode = "n";
+        key = "<leader>ff";
+        action = "<cmd>FzfLua files<cr>";
+	options.desc = "Find Files";
+	}
+		{
+			mode = "n";
+        key = "<leader>fs";
+        action = "<cmd>FzfLua live_grep<cr>";
+	options.desc = "Live Grep";
 	}
 	];
 	globals.mapleader = " ";
