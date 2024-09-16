@@ -30,6 +30,14 @@
       fzf-lua.enable = true;
       gitgutter.enable = true;
       gitblame.enable = true;
+      autoclose.enable = true;
+      diffview.enable = true;
+      conform-nvim = {
+        enable = true;
+        formattersByFt = {
+          nix = ["alejandro"];
+        };
+      };
     };
     keymaps = [
       {
@@ -46,19 +54,19 @@
       {
         mode = "n";
         key = "<leader>th";
-        action = ":1ToggleTerm direction=horizontal<cr>";
+        action = "<cmd>1ToggleTerm direction=horizontal<cr>";
         options.desc = "Horizontal Terminal";
       }
       {
         mode = "n";
         key = "<leader>tv";
-        action = ":2ToggleTerm direction=vertical size=80<cr>";
+        action = "<cmd>2ToggleTerm direction=vertical size=80<cr>";
         options.desc = "Vertical Terminal";
       }
       {
         mode = "n";
         key = "<leader>tf";
-        action = ":3ToggleTerm direction=float<cr>";
+        action = "<cmd>3ToggleTerm direction=float<cr>";
         options.desc = "Floating Terminal";
       }
       {
@@ -78,6 +86,18 @@
         key = "<leader>ss";
         action = "<cmd>FzfLua live_grep<cr>";
         options.desc = "Live Grep";
+      }
+      {
+        mode = "n";
+        key = "<leader>do";
+        action = "<cmd>DiffviewOpen<cr>";
+        options.desc = "Open Diff View";
+      }
+      {
+        mode = "n";
+        key = "<leader>dc";
+        action = "<cmd>DiffviewClose<cr>";
+        options.desc = "Close Diff View";
       }
     ];
     globals.mapleader = " ";
