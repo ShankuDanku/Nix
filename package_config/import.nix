@@ -3,6 +3,6 @@
 imports = [
 ./git.nix
 ./tor.nix
-./nixvim.nix
+./nixvim/import.nix
 ];
 }
