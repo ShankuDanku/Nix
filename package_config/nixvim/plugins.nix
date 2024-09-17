@@ -1,9 +1,7 @@
 {pkgs, ...}: {
   programs.nixvim = {
     plugins = {
-      which-key = {
-        enable = true;
-      };
+      which-key.enable = true;
       nvim-tree.enable = true;
       lualine.enable = true;
       toggleterm.enable = true;
@@ -12,13 +10,7 @@
       gitblame.enable = true;
       autoclose.enable = true;
       diffview.enable = true;
-      conform-nvim = {
-        enable = true;
-        formattersByFt = {
-          nix = ["alejandro"];
-        };
-      };
-    };
+          };
 
       extraPlugins = with pkgs.vimPlugins; [
         nvim-web-devicons
