@@ -16,5 +16,6 @@ in {
     alejandra
     python312
     pre-commit
+    nil
   ];
 }
