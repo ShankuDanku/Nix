@@ -68,7 +68,7 @@ in {
 
   nixpkgs.config.allowUnfree = true;
   fonts.packages = with pkgs; [
-	(nerdfonts.override { fonts = [ "UbuntuMono"]; })
+    (nerdfonts.override {fonts = ["UbuntuMono"];})
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?

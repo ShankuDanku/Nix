@@ -1,8 +1,7 @@
-{...}:
-{
-imports = [
-./git.nix
-./tor.nix
-./nixvim/import.nix
-];
+{...}: {
+  imports = [
+    ./git.nix
+    ./tor.nix
+    ./nixvim/import.nix
+  ];
 }

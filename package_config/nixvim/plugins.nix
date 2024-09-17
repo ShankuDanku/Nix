@@ -10,10 +10,10 @@
       gitblame.enable = true;
       autoclose.enable = true;
       diffview.enable = true;
-          };
+    };
 
-      extraPlugins = with pkgs.vimPlugins; [
-        nvim-web-devicons
-      ];
+    extraPlugins = with pkgs.vimPlugins; [
+      nvim-web-devicons
+    ];
   };
 }
