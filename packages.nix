@@ -17,5 +17,8 @@ in {
     python312
     pre-commit
     nil
+    ruff
+    python312Packages.django
+    python312Packages.jedi-language-server
   ];
 }
