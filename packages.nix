@@ -37,5 +37,7 @@ in {
     # flutter
     flutter
     android-studio
+
+    gcc
   ];
 }

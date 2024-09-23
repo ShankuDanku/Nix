@@ -17,6 +17,29 @@
       gitblame.enable = true;
       autoclose.enable = true;
       diffview.enable = true;
+      treesitter = {
+        enable = true;
+        indent = true;
+        folding = true;
+      };
+      lsp = {
+        enable = true;
+        servers = {
+          nil-ls = {
+            enable = true;
+            settings.formatting.command = [
+              "alejandra"
+            ];
+          };
+          pylsp = {
+            enable = true;
+            settings.formatting.command = [
+              "ruff"
+            ];
+          };
+        };
+      };
+      lsp-format.enable = true;
     };
 
     extraPlugins = with pkgs.vimPlugins; [

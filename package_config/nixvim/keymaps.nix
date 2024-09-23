@@ -2,7 +2,7 @@
   programs.nixvim.keymaps = [
     {
       mode = "n";
-      key = "<leader>o";
+      key = "<leader>f";
       action = "<cmd>NvimTreeToggle<CR>";
       options.desc = "Toggle Tree";
     }
