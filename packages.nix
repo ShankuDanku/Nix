@@ -7,18 +7,35 @@
     .outPath;
 in {
   environment.systemPackages = with pkgs; [
+    # terminal
+    kitty
+    tmux
+
+    # neovim
     neovim
+    vimPlugins.nvim-web-devicons
+
+    # git
     git
+    pre-commit
+
+    # browsers
     tor-browser
     opera
-    vimPlugins.nvim-web-devicons
-    kitty
-    alejandra
-    python312
-    pre-commit
+    google-chrome
+
+    # nix
     nil
+    alejandra
+
+    # python
+    python312
     ruff
     python312Packages.django
-    python312Packages.jedi-language-server
+    python312Packages.python-lsp-server
+
+    # flutter
+    flutter
+    android-studio
   ];
 }
