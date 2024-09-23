@@ -40,6 +40,10 @@
         };
       };
       lsp-format.enable = true;
+      luasnip.enable = true;
+      cmp.enable = true;
+      cmp-nvim-lsp.enable = true;
+      cmp_luasnip.enable = true;
     };
 
     extraPlugins = with pkgs.vimPlugins; [
