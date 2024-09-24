@@ -30,7 +30,6 @@ in {
 
     # python
     python312
-    ruff
     python312Packages.django
     python312Packages.python-lsp-server
 
@@ -39,5 +38,7 @@ in {
     android-studio
 
     gcc
+    podman
+    postgresql_16
   ];
 }

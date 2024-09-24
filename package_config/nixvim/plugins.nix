@@ -33,9 +33,7 @@
           };
           pylsp = {
             enable = true;
-            settings.formatting.command = [
-              "ruff"
-            ];
+            settings.plugins.ruff.enabled = true;
           };
         };
       };
