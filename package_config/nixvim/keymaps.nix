@@ -14,19 +14,19 @@
     {
       mode = "n";
       key = "<leader>th";
-      action = "<cmd>1ToggleTerm direction=horizontal<cr>";
+      action = "<cmd>ToggleTerm direction=horizontal<cr>";
       options.desc = "Horizontal Terminal";
     }
     {
       mode = "n";
       key = "<leader>tv";
-      action = "<cmd>2ToggleTerm direction=vertical size=80<cr>";
+      action = "<cmd>ToggleTerm direction=vertical size=80<cr>";
       options.desc = "Vertical Terminal";
     }
     {
       mode = "n";
       key = "<leader>tf";
-      action = "<cmd>3ToggleTerm direction=float<cr>";
+      action = "<cmd>ToggleTerm direction=float<cr>";
       options.desc = "Floating Terminal";
     }
     {
