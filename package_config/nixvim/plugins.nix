@@ -7,6 +7,7 @@
           "<leader>t" = "Toggle Terminals";
           "<leader>d" = "Diff Views";
           "<leader>s" = "Search Stuff";
+          "<leader>h" = "Git Hunks";
         };
       };
       nvim-tree.enable = true;
@@ -38,10 +39,6 @@
         };
       };
       lsp-format.enable = true;
-      luasnip.enable = true;
-      cmp.enable = true;
-      cmp-nvim-lsp.enable = true;
-      cmp_luasnip.enable = true;
     };
 
     extraPlugins = with pkgs.vimPlugins; [
