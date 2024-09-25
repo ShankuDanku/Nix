@@ -39,6 +39,7 @@
         };
       };
       lsp-format.enable = true;
+      transparent.enable = true;
     };
 
     extraPlugins = with pkgs.vimPlugins; [

@@ -20,6 +20,7 @@
       cursorline = true;
       timeoutlen = 250;
       completeopt = "menu,menuone,noinsert,noselect";
+      showmode = false;
     };
 
     globals.mapleader = " ";
