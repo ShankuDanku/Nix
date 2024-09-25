@@ -23,7 +23,6 @@
 
     # python
     python312
-    python312Packages.django
     python312Packages.python-lsp-server
 
     # flutter
