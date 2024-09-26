@@ -7,7 +7,7 @@
     colorschemes.onedark = {
       enable = true;
       settings = {
-        style = "warm";
+        style = "darker";
       };
     };
     opts = {
