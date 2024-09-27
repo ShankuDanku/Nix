@@ -12,7 +12,6 @@
       };
       nvim-tree.enable = true;
       lualine.enable = true;
-      toggleterm.enable = true;
       fzf-lua.enable = true;
       gitgutter.enable = true;
       gitblame.enable = true;
@@ -54,6 +53,7 @@
       };
       lsp-format.enable = true;
       transparent.enable = true;
+      tmux-navigator.enable = true;
     };
 
     extraPlugins = with pkgs.vimPlugins; [

@@ -13,30 +13,6 @@
     }
     {
       mode = "n";
-      key = "<leader>th";
-      action = "<cmd>ToggleTerm direction=horizontal<cr>";
-      options.desc = "Horizontal Terminal";
-    }
-    {
-      mode = "n";
-      key = "<leader>tv";
-      action = "<cmd>ToggleTerm direction=vertical size=80<cr>";
-      options.desc = "Vertical Terminal";
-    }
-    {
-      mode = "n";
-      key = "<leader>tf";
-      action = "<cmd>ToggleTerm direction=float<cr>";
-      options.desc = "Floating Terminal";
-    }
-    {
-      mode = "n";
-      key = "<leader>tt";
-      action = "<cmd>ToggleTermToggleAll<cr>";
-      options.desc = "Toggle Terminals";
-    }
-    {
-      mode = "n";
       key = "<leader>sf";
       action = "<cmd>FzfLua files<cr>";
       options.desc = "Find Files";
