@@ -21,6 +21,7 @@
       timeoutlen = 250;
       completeopt = "menu,menuone,noinsert,noselect";
       showmode = false;
+      foldlevel = 4;
     };
 
     globals.mapleader = " ";
