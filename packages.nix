@@ -17,20 +17,16 @@
     opera
     google-chrome
 
-    # nix
-    nil
-    alejandra
-
     # python
     python312
-    python312Packages.python-lsp-server
 
     # flutter
     flutter
     android-studio
 
-    gcc
     podman
     postgresql_16
+    tailwindcss
+    alejandra
   ];
 }

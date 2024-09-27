@@ -26,6 +26,10 @@
       lsp = {
         enable = true;
         servers = {
+          cssls.enable = true;
+          html.enable = true;
+          tailwindcss.enable = true;
+          yamlls.enable = true;
           nil-ls = {
             enable = true;
             settings.formatting.command = [
