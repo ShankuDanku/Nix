@@ -1,16 +1,14 @@
-{...}: let
-  nix-art = builtins.fetchGit {
-    url = "https://github.com/NixOS/nixos-artwork";
-    name = "nix-art";
-  };
-in {
+{...}: {
   home-manager.users.sashank = {pkgs, ...}: {
-    programs.kitty = {
+    programs.alacritty = {
       enable = true;
-      font.name = "JetBrainsMono Nerd Font";
       settings = {
-        background_image = "${nix-art}/wallpapers/nix-wallpaper-nineish-dark-gray.png";
-        background_image_layout = "cscaled";
+        font = {
+          normal = {
+            family = "JetBrainsMono Nerd Font";
+          };
+          size = 12;
+        };
       };
     };
     home.stateVersion = "24.05";

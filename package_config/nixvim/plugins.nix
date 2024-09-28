@@ -52,7 +52,13 @@
         };
       };
       lsp-format.enable = true;
-      transparent.enable = true;
+      transparent = {
+        enable = true;
+        settings.extra_groups = [
+          "NormalFloat"
+          "NvimTreeNormal"
+        ];
+      };
       tmux-navigator.enable = true;
     };
 

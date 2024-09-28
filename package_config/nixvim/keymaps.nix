@@ -7,11 +7,6 @@
       options.desc = "Toggle Tree";
     }
     {
-      mode = "t";
-      key = "<Esc>";
-      action = "<C-Bslash><C-N>";
-    }
-    {
       mode = "n";
       key = "<leader>sf";
       action = "<cmd>FzfLua files<cr>";
@@ -43,26 +38,6 @@
       key = "<C-S>";
       action = "<cmd>lua vim.lsp.buf.signature_help()<cr>";
       options.desc = "Signature Help";
-    }
-    {
-      mode = "n";
-      key = "<C-l>";
-      action = "<C-w>l";
-    }
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<C-w>k";
-    }
-    {
-      mode = "n";
-      key = "<C-j>";
-      action = "<C-w>j";
-    }
-    {
-      mode = "n";
-      key = "<C-h>";
-      action = "<C-w>h";
     }
   ];
 }
