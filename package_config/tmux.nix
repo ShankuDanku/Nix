@@ -5,7 +5,6 @@
       vim-tmux-navigator
       resurrect
       catppuccin
-      continuum
     ];
     extraConfigBeforePlugins = ''
       set-option -g status-position top
@@ -14,8 +13,6 @@
       bind-key C-a send-prefix
       set -g base-index 1
       setw -g pane-base-index 1
-      set -g @continuum-boot 'on'
-      set -g @continuum-boot-options 'alacritty'
     '';
   };
 }
