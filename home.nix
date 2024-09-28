@@ -1,8 +1,18 @@
-{...}: {
+{...}: let
+  catppucin-alacritty = builtins.fetchGit {
+    url = "https://github.com/catppuccin/alacritty";
+  };
+in {
   home-manager.users.sashank = {pkgs, ...}: {
     programs.alacritty = {
       enable = true;
       settings = {
+        import = [
+          "${catppucin-alacritty}/catppuccin-mocha.toml"
+        ];
+        window = {
+          startup_mode = "Fullscreen";
+        };
         font = {
           normal = {
             family = "JetBrainsMono Nerd Font";
