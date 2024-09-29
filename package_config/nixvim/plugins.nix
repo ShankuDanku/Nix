@@ -65,6 +65,10 @@
       tmux-navigator.enable = true;
       lint = {
         enable = true;
+        autoCmd.event = [
+          "BufEnter"
+          "BufWritePost"
+        ];
         lintersByFt = {
           htmldjango = [
             "djlint"
