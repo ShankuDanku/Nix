@@ -19,6 +19,7 @@
 
     # python
     python312
+    djlint
 
     # flutter
     flutter

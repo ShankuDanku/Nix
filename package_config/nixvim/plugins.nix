@@ -8,6 +8,7 @@
           "<leader>d" = "Diff Views";
           "<leader>s" = "Search Stuff";
           "<leader>h" = "Git Hunks";
+          "<leader>l" = "Diagnostics";
         };
       };
       nvim-tree.enable = true;
@@ -24,6 +25,12 @@
       };
       lsp = {
         enable = true;
+        keymaps = {
+          diagnostic = {
+            "<leader>lj" = "goto_next";
+            "<leader>lk" = "goto_prev";
+          };
+        };
         servers = {
           tsserver.enable = true;
           cssls.enable = true;
@@ -56,6 +63,14 @@
         enable = true;
       };
       tmux-navigator.enable = true;
+      lint = {
+        enable = true;
+        lintersByFt = {
+          htmldjango = [
+            "djlint"
+          ];
+        };
+      };
     };
 
     extraPlugins = with pkgs.vimPlugins; [
