@@ -53,7 +53,6 @@
               jedi_references.enabled = true;
               jedi_signature_help.enabled = true;
               jedi_symbols.enabled = true;
-              pylsp_mypy.enabled = true;
             };
           };
         };

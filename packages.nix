@@ -29,5 +29,6 @@
     postgresql_16
     tailwindcss
     alejandra
+    discord
   ];
 }
