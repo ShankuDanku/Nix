@@ -12,6 +12,10 @@ in {
         ];
         window = {
           startup_mode = "Fullscreen";
+          padding = {
+            x = 30;
+            y = 30;
+          };
         };
         font = {
           normal = {

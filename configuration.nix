@@ -72,7 +72,12 @@ in {
   ];
 
   system.stateVersion = "24.05"; # Did you read the comment?
-  programs.bash.shellAliases = {
-    tmux = "tmux -u";
+  programs.bash = {
+    promptInit = ''
+      PS1="\[\033[1;94m\]⤷ "
+    '';
+    shellAliases = {
+      tmux = "tmux -u";
+    };
   };
 }
