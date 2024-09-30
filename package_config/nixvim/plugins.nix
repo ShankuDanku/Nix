@@ -4,7 +4,6 @@
       which-key = {
         enable = true;
         registrations = {
-          "<leader>t" = "Toggle Terminals";
           "<leader>d" = "Diff Views";
           "<leader>s" = "Search Stuff";
           "<leader>h" = "Git Hunks";
