@@ -19,7 +19,7 @@
       hlsearch = false;
       cursorline = true;
       timeoutlen = 250;
-      completeopt = "menu,menuone,noinsert,noselect";
+      completeopt = "menu,menuone";
       showmode = false;
       foldlevel = 4;
     };

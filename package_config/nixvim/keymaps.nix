@@ -20,6 +20,12 @@
     }
     {
       mode = "n";
+      key = "<leader>sg";
+      action = "<cmd>FzfLua live_grep_glob<cr>";
+      options.desc = "Live Grep Glob";
+    }
+    {
+      mode = "n";
       key = "<leader>do";
       action = "<cmd>DiffviewOpen<cr>";
       options.desc = "Open Diff View";
@@ -29,15 +35,6 @@
       key = "<leader>dc";
       action = "<cmd>DiffviewClose<cr>";
       options.desc = "Close Diff View";
-    }
-    {
-      mode = [
-        "n"
-        "i"
-      ];
-      key = "<C-S>";
-      action = "<cmd>lua vim.lsp.buf.signature_help()<cr>";
-      options.desc = "Signature Help";
     }
   ];
 }

@@ -29,6 +29,14 @@
             "<leader>lj" = "goto_next";
             "<leader>lk" = "goto_prev";
           };
+          lspBuf = {
+            "<leader>ah" = "hover";
+            "<leader>ar" = "references";
+            "<leader>ad" = "definition";
+            "<leader>ai" = "implementation";
+            "<leader>at" = "type_definition";
+            "<leader>as" = "signature_help";
+          };
         };
         servers = {
           tsserver.enable = true;
@@ -71,6 +79,22 @@
           htmldjango = [
             "djlint"
           ];
+        };
+      };
+      specs = {
+        enable = true;
+      };
+      mini = {
+        enable = true;
+        modules = {
+          animate = {
+            open = {
+              enable = false;
+            };
+            close = {
+              enable = false;
+            };
+          };
         };
       };
     };

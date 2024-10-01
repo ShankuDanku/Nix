@@ -30,5 +30,6 @@
     tailwindcss
     alejandra
     discord
+    ripgrep
   ];
 }
