@@ -16,6 +16,7 @@
     tor-browser
     opera
     google-chrome
+    firefox
 
     # python
     python312
