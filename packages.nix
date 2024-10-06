@@ -1,5 +1,8 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    #nix
+    alejandra
+
     # terminal
     alacritty
     tmux
@@ -7,6 +10,7 @@
     # neovim
     neovim
     vimPlugins.nvim-web-devicons
+    ripgrep
 
     # git
     git
@@ -14,7 +18,6 @@
 
     # browsers
     tor-browser
-    opera
     google-chrome
     firefox
 
@@ -26,11 +29,18 @@
     flutter
     android-studio
 
-    podman
-    postgresql_16
-    tailwindcss
-    alejandra
+    # apps
     discord
-    ripgrep
+
+    # databases
+    postgresql_16
+
+    # javascript
+    nodejs-slim
+    nodePackages.npm
+
+    # dev stuff
+    tailwindcss
+    podman
   ];
 }
