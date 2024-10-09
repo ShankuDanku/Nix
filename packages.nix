@@ -38,7 +38,6 @@
     # javascript
     nodejs-slim
     nodePackages.npm
-    create-react-app
 
     # dev stuff
     tailwindcss

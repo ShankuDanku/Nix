@@ -22,7 +22,7 @@
       set -g @catppuccin_window_current_text "#W"
       set -g @catppuccin_window_default_fill "none"
       set -g @catppuccin_window_current_fill "all"
-      set -g @catppuccin_status_modules_right "directory date_time battery cpu"
+      set -g @catppuccin_status_modules_right "date_time battery cpu"
       set -g @catppuccin_status_fill "all"
       set -g @catppuccin_status_connect_separator "yes"
       set -g @catppuccin_status_background "default"
