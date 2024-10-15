@@ -22,6 +22,10 @@
       completeopt = "menu,menuone";
       showmode = false;
       foldlevel = 4;
+      tabstop = 4;
+      expandtab = true;
+      softtabstop = 4;
+      shiftwidth = 4;
     };
 
     globals.mapleader = " ";
