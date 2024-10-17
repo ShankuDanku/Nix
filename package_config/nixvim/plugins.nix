@@ -62,6 +62,7 @@
               jedi_symbols.enabled = true;
             };
           };
+          astro.enable = true;
         };
       };
       lsp-format.enable = true;
