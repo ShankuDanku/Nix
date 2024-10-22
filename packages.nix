@@ -40,6 +40,7 @@
     pnpm
 
     # dev stuff
+    tailwindcss
     podman
   ];
 }
