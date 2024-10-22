@@ -37,11 +37,9 @@
 
     # javascript
     nodejs-slim
-    nodePackages.npm
     pnpm
 
     # dev stuff
-    tailwindcss
     podman
   ];
 }

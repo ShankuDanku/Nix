@@ -8,6 +8,18 @@
           "<leader>s" = "Search Stuff";
           "<leader>h" = "Git Hunks";
           "<leader>l" = "Diagnostics";
+          "<leader>a" = "Autocomplete";
+          "<leader>ah" = "Show Hover Info";
+          "<leader>ar" = "Find All References";
+          "<leader>ad" = "Go To Definition";
+          "<leader>ai" = "Go To Implementation";
+          "<leader>at" = "Show Type Definition";
+          "<leader>as" = "Display Singature Help";
+          "<leader>hp" = "Preview Git Hunk";
+          "<leader>hs" = "Stage Git Hunk";
+          "<leader>hu" = "Undo Git Hunk";
+          "<leader>lj" = "Go To Next Diagnostic Shit";
+          "<leader>lk" = "Go To Prev Diagnostic Shit";
         };
       };
       nvim-tree.enable = true;
@@ -42,7 +54,13 @@
           tsserver.enable = true;
           cssls.enable = true;
           html.enable = true;
-          tailwindcss.enable = true;
+          tailwindcss = {
+            enable = true;
+            filetypes = [
+              "html"
+              "htmldjango"
+            ];
+          };
           yamlls.enable = true;
           nil-ls = {
             enable = true;
@@ -98,8 +116,10 @@
           };
         };
       };
+      emmet = {
+        enable = true;
+      };
     };
-
     extraPlugins = with pkgs.vimPlugins; [
       nvim-web-devicons
     ];
